@@ -95,7 +95,7 @@ export default function App() {
         value={item.done}
         onValueChange={() => toggleTask(item.id)}
         trackColor={{ false: "#ddd", true: "#4CAF50" }}
-        thumbColor={item.done ? "#fff" : "#fff"}
+        thumbColor={item.done ? "#fff" : "#fff"} // 同色，讓 Switch 看起來更簡潔
       />
 
       {/* Pressable：刪除按鈕（按下有視覺反饋） */}
@@ -286,7 +286,7 @@ const styles = StyleSheet.create({
     shadowColor: "#000",
     shadowOpacity: 0.3,
     shadowRadius: 8,
-    elevation: 6,
+    elevation: 6, // Android 陰影
   },
   fabPressed: {
     backgroundColor: "#16213e",
